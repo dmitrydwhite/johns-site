@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Land Home Real Estate</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="title-bar">
+        <h1>LAND HOME REAL ESTATE</h1>
+        <div class="snaz-img">
+          <img src="./assets/new-house-1.jpg" alt="Your New Home On Your New Land" >
+        </div>
+      </div>
+      <!-- <div class="title">
+      </div> -->
+    </div>
+    <div class="tag-body">
+      <div class="tag-text">
+        <h2>Welcome to Land Home Real Estate!</h2>
+        <p>We specialize in helping our customers find land for prefabricated homes in Oregon. Our goal is to make finding land for your home a simple procedure.</p>
+      </div>
+    </div>
+    <div class="tools-section">
+      <div class="map-tool">
+          <p class="map-info">Click a location on the map near where you're interested in purchasing your dream home site</p>
+        <div id="mark-this-map"></div>
+      </div>
+
+      <div class="inquiry-form">
+        <p class="form-info">Help us tailor our recommendations and services just for you!</p>
+        <form id="contactForm">
+          <div class="form-question">
+            <p>Do you currently own your own home or property?</p>
+            <input type="radio" name="currentlyOwn" id="doesCurrentlyOwn">
+            <label for="doesCurrentlyOwn">Yes</label>
+            <input type="radio" name="currentlyOwn" id="doesntCurrntlyOwn">
+            <label for="doesntCurrentlyOwn">No</label>
+          </div>
+
+          <div class="form-question">
+            <label for="financing">Have you been pre-approved for a construction loan?</label>
+            <br>
+            <select name="financing" id="financing">
+              <option value="">Select One</option>
+              <option value="noApprove">I have not been pre-approved for any loan</option>
+              <option value="100">$100,000 - $150,000</option>
+              <option value="100">$150,000 - $200,000</option>
+              <option value="100">$200,000 - $250,000</option>
+              <option value="100">$250,000 - $300,000</option>
+              <option value="100">$300,000 or more</option>
+              <option value="cash">I have cash available</option>
+            </select>
+          </div>
+
+          <div class="form-question">
+            <label for="firstName">First Name</label>
+            <input class="text-input" type="text" name="firstName" id="firstName">
+          </div>
+
+          <div class="form-question">
+            <label for="lastName">Last Name</label>
+            <input class="text-input" type="text" name="lastName" id="lastName">
+          </div>
+
+          <div class="form-question">
+            <label for="phone">Phone Number</label>
+            <input class="text-input" type="tel" name="phone" id="phone">
+          </div>
+
+          <div class="form-question">
+            <label for="email">E-mail Address</label>
+            <input class="text-input" type="email" name="email" id="email">
+          </div>
+
+          <button class="submit-btn" type="submit">Contact John</button>
+        </form>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+    <div class="footer-section">
+      <h3>Land Home Real Estate, LLC</h3>
+    </div>
+  </div>
+
+  <!-- Local Map Control Script -->
+  <script src="./scripts/map-handler.js"></script>
+  <script src="./scripts/form-handler.js"></script>
+  <!-- Google Maps Loading Script -->
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd6gGoYrqSGxxgyzHiF4ZRB8jTvQusemc&callback=lhreMapHandler"
+  ></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  position: relative;
+  padding-top: 20px;
+}
+
+.title-bar {
+  height: 78px;
+  background-image: linear-gradient(#88b9fb, #5a852d);
+}
+
+h1 {
+  padding-left: 5%;
+  color: #fff;
+  float: left;
+}
+
+.snaz-img {
+  border: 3px solid #fff;
+  max-width: 33%;
+  float: right;
+  margin-right: 5%;
+  margin-top: -18px;
+}
+
+.tag-body {
+  font-style: italic;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  max-width: 50%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.map-tool {
+  float: left;
+  width: 746px;
+}
+
+.map-info {
+  text-align: center;
+}
+
+#mark-this-map {
+  width: 746px;
+  height: 526px;
+  background-color: grey;
+}
+
+.inquiry-form {
+  float: left;
+  width: calc(100% - 764px);
+  text-align: center;
+}
+
+.form-info {
+  font-style: italic;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.form-question {
+  padding: 12px;
+}
+
+.form-question label {
+  width: 100%;
+}
+
+.text-input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  width: 60%;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text-input:focus {
+  outline: none;
+  border-bottom: 1px solid lightskyblue;
+}
+
+.submit-btn {
+  cursor: pointer;
+  background-color: #88b9fb;
+  border-radius: 12px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
+.footer-section {
+  margin-top: 64px;
+  background-color: #5a852d;
+  color: white;
+  height: 44px;
+}
+
+.footer-section h3 {
+  float: right;
+  padding-right: 12px;
+}
